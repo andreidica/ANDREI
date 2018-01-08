@@ -9,7 +9,7 @@ public:
 	int size() const;
 	bool isEmpty() const;
 	const T& top() const {
-		if (isEmpty()) throw "Stiva goala\n";
+		if (isEmpty()) throw "Stiva  ESTE GOALA goala\n";
 		return v.back();
 	}
 	void push(const T& ob);
@@ -32,8 +32,8 @@ template<typename T> void Stack<T>::pop() {
 
 int main() {
 	Stack <int> st;
-	for (int i = 1; i <= 10
-		; i++)st.push(i);
+	for (int i = 1; i <= 20; i++)
+		st.push(i);
 		while (!st.isEmpty()) {
 			cout << st.top() << "\n";
 			st.pop();
